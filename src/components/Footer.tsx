@@ -118,11 +118,6 @@ export default function Footer() {
         {/* Bottom copyright */}
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between text-xs text-light-mint/55">
           <p>© {currentYear} Dr. Rajashree Lad&apos;s Physiotherapy & Osteopathy Centre. All rights reserved.</p>
-          <div className="flex gap-4">
-            <Link href="#" className="hover:text-white">Privacy Policy</Link>
-            <Link href="#" className="hover:text-white">Terms of Service</Link>
-            <Link href="#" className="hover:text-white">Sitemap</Link>
-          </div>
         </div>
       </div>
     </footer>
