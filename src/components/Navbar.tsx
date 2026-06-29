@@ -116,15 +116,6 @@ export default function Navbar() {
         {isOpen && (
           <div className="absolute inset-x-4 top-24 z-50 rounded-2xl border border-white/30 bg-white/95 p-6 shadow-xl backdrop-blur-md lg:hidden animate-in fade-in slide-in-from-top-5 duration-200">
             <div className="flex flex-col gap-4">
-              <div className="relative mb-2">
-                <input
-                  type="text"
-                  placeholder="Search services..."
-                  className="w-full rounded-xl border border-dark-teal/15 bg-light-mint/30 px-4 py-2.5 pl-10 text-sm text-dark-text focus:outline-none focus:ring-2 focus:ring-primary-teal"
-                />
-                <Search className="absolute left-3 top-3 h-4.5 w-4.5 text-dark-text/45" />
-              </div>
-
               {navLinks.map((link) => (
                 <Link
                   key={link.label}
@@ -138,10 +129,13 @@ export default function Navbar() {
 
               <hr className="my-2 border-dark-text/10" />
 
-              <div className="flex items-center justify-between px-3 py-1">
-                <div className="flex items-center gap-2 text-sm text-dark-text/70">
-                  <MapPin className="h-4 w-4 text-primary-teal" />
-                  <span>123 Care Street, Medical District</span>
+              <div className="flex items-start justify-between px-3 py-1">
+                <div className="flex items-start gap-2 text-sm text-dark-text/70">
+                  <MapPin className="h-4 w-4 text-primary-teal shrink-0 mt-0.5" />
+                  <span className="text-xs leading-relaxed">
+                    Harjivandas Estate, Dr Babasaheb Ambedkar Rd, near Dadar TT,
+                    Dadar East, Dadar, Mumbai, Maharashtra 400014
+                  </span>
                 </div>
               </div>
 
